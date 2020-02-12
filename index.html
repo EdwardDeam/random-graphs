@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
   <link rel="stylesheet" href="style.css">
   <title>Random Graphs</title>
 </head>
+
 <body>
   <div class="container">
     <div id="canvas-container"></div>
@@ -14,13 +16,17 @@
       <form>
         <div class="form-group">
           <span class="form-label">Number of Nodes</span>
-          <input type="range" name="numNodeRange" min="2" max="10" value="5" class="slider" onchange="this.form.numNodeInput.value=this.value">
-          <input type="number" name="numNodeInput" min="2" max="10" value="5" class="slider-input" oninput="this.form.numNodeRange.value=this.value" />
+          <input type="range" name="numNodeRange" min="2" max="10" value="5" class="slider"
+            onchange="this.form.numNodeInput.value=this.value">
+          <input type="number" name="numNodeInput" min="2" max="10" value="5" class="slider-input"
+            oninput="this.form.numNodeRange.value=this.value" />
         </div>
         <div class="form-group">
           <span class="form-label">Edge Probability</span>
-          <input type="range" name="edgeChanceRange" min="1" max="100" value="50" class="slider" onchange="this.form.edgeChanceInput.value=this.value">
-          <input type="number" name="edgeChanceInput" min="1" max="100" value="50" class="slider-input" onchange="this.form.edgeChanceRange.value=this.value">
+          <input type="range" name="edgeChanceRange" min="1" max="100" value="50" class="slider"
+            onchange="this.form.edgeChanceInput.value=this.value">
+          <input type="number" name="edgeChanceInput" min="1" max="100" value="50" class="slider-input"
+            onchange="this.form.edgeChanceRange.value=this.value">
         </div>
         <div class="form-group">
           <input type="button" value="Generate Graph" onClick="generate()">
@@ -30,4 +36,5 @@
   </div>
   <script type="module" src="graph.js"></script>
 </body>
+
 </html>

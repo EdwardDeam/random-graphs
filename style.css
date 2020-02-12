@@ -1,0 +1,58 @@
+.container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.controls {
+ 
+}
+.form-group {
+  margin: 5px 0;
+}
+.form-label {
+  width: 116px;
+  display: inline-block;
+}
+.slider-input {
+  height: 12px;
+  padding: 0;
+  margin: 2px;
+}
+input[type='range']{
+  /* display: block; */
+  vertical-align: middle;
+}
+
+.slider {
+  -webkit-appearance: none;  /* Override default CSS styles */
+  appearance: none;
+  width: 200px;
+  height: 15px;
+  border-radius: 5px;
+  background: lightblue;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+.slider:hover {
+  opacity: 1;
+}
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%; 
+  background: cornflowerblue;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: cornflowerblue  ;
+  cursor: pointer;
+}
